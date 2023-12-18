@@ -1,0 +1,556 @@
+* {
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0px auto;
+  width: 100%;
+  background-color: #69b3e4;
+  font-family: Ubuntu, Helvetica, sans-serif;
+  color: #053645;
+  font-size: 14px;
+} 
+
+.header ul{ 
+  webkit-backdrop-filter: blur(80px);
+  backdrop-filter: blur(8px);
+  text-align: center;
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  z-index: 100;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: hsla(0, 0%, 95.3%, 0.75);
+  box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+.header li{
+  display: inline-block;
+  font-size: 16px;
+  padding: 20px;
+  font-style: normal;
+}
+.header li a{
+  color: #053645;
+  text-align: center;
+  padding: 14px 1px;
+  text-decoration: none;
+}
+li a:hover:not(.active) {
+  text-decoration: underline 3px;
+}
+.row{
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 90px;
+}
+
+.column1 {
+  float: left;
+  margin-left: 150px;
+  width: 400px;
+  padding: 10px;
+  height: 400px; 
+  border-radius: 50px;
+}
+.column2 {
+  float: right;
+  margin-right: 150px;
+  width: 400px;
+  padding: 10px;
+  height: 400px; 
+  border-radius: 50px;
+
+}
+.img1st img{
+  width: 100%;
+  height: 800px;
+  box-shadow: 10px 10px 5px lightblue inset;
+}
+.heading{
+  font-size: 70px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px blue;
+}
+.p1{
+  margin-top: 100px;
+  height: 500px;
+  width: 100%;
+}
+.p11{
+  height: 100%;
+  width: 25%;
+  float: left;
+  background-color: ;
+  padding: 5px;
+}
+.p12{
+  height: 100%;
+  width: 25%;
+  float: left;
+  background-color: ;
+  padding: 5px;
+}
+.p13{
+  height: 100%;
+  width: 25%;
+  float: left;
+  background-color: ;
+  padding: 5px;
+}
+.p14{
+  height: 100%;
+  width: 25%;
+  float: left;
+  background-color: ;
+  padding: 5px;
+}
+.p2{
+  height: 500px;
+  width: 100%;
+}
+.p21{
+  height: 100%;
+  width: 25%;
+  float: left;
+  background-color: ;
+  padding: 5px;
+}
+.p22{
+  height: 100%;
+  width: 25%;
+  float: left;
+  background-color: ;
+  padding: 5px;
+}
+.p23{
+  height: 100%;
+  width: 25%;
+  float: left;
+  background-color: ;
+  padding: 5px;
+}
+.p24{
+  height: 100%;
+  width: 25%;
+  float: left;
+  background-color: ;
+  padding: 5px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 100%;
+  background-color: whitesmoke;
+}
+.card img{
+  height: 320px;
+  width: 320px;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+.hotel{
+  z-index: -1;
+  height: 800px;
+  width: 100%;
+  padding: 5px;
+}
+.hotelhead p{
+  width: 100%;
+  font-size: 60px;
+  text-align: center;
+  text-decoration: underline 3px;
+}
+
+.hotelright{
+  float: left;
+  width: 50%;
+  height: 720px;
+}
+.hotelright1{
+  width: 98%;
+  height: 48%;
+}
+.hotelright11{
+  float: left;
+  width: 48%;
+  height: 98%;
+}
+.hotelright12{
+  float: right;
+  width: 48%;
+  height: 98%;
+}
+.hotelright2{
+  width: 98%;
+  height: 48%;
+}
+.hotelright21{
+  float: left;
+  width: 48%;
+  height: 98%;
+}
+.hotelright22{
+  float: right;
+  width: 48%;
+  height: 98%;
+}
+.cardd1 {
+ width: 100%;
+ height: 100%;
+ box-shadow: 0 10px 10px rgba(0, 0, 0, 0.212);
+ background: #fff;
+ display: flex;
+ border-radius: 20px;
+ justify-content: center;
+ position: relative;
+ transition: all .4s;
+}
+
+.cardd1::before {
+ content: 'HOTEL';
+ letter-spacing: 0.2em;
+ position: absolute;
+ bottom: 8px;
+ left: 20px;
+ color: rgb(51, 51, 51);
+ font-size: 0.8em;
+ font-weight: 700;
+}
+
+.cardd1 div {
+ width: 100%;
+ height: 100%;
+ border-radius: 20px;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.212);
+ cursor: pointer;
+ z-index: 10;
+ transition: all .4s;
+ background-color: #fff;
+}
+
+.cardd1:hover div {
+ transform: translateY(-30px);
+}
+
+.cardd1 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.cardd2 {
+ width: 100%;
+ height: 100%;
+ box-shadow: 0 10px 10px rgba(0, 0, 0, 0.212);
+ background: #fff;
+ display: flex;
+ border-radius: 20px;
+ justify-content: center;
+ position: relative;
+ transition: all .4s;
+}
+
+.cardd2::before {
+ content: 'DINING';
+ letter-spacing: 0.2em;
+ position: absolute;
+ bottom: 8px;
+ left: 20px;
+ color: rgb(51, 51, 51);
+ font-size: 0.8em;
+ font-weight: 700;
+}
+
+.cardd2 div {
+ width: 100%;
+ height: 100%;
+ border-radius: 20px;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.212);
+ cursor: pointer;
+ z-index: 10;
+ transition: all .4s;
+ background-color: #fff;
+}
+
+.cardd2:hover div {
+ transform: translateY(-30px);
+}
+
+.cardd2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.cardd3 {
+ width: 100%;
+ height: 100%;
+ box-shadow: 0 10px 10px rgba(0, 0, 0, 0.212);
+ background: #fff;
+ display: flex;
+ border-radius: 20px;
+ justify-content: center;
+ position: relative;
+ transition: all .4s;
+}
+
+.cardd3::before {
+ content: 'BEDROOM';
+ letter-spacing: 0.2em;
+ position: absolute;
+ bottom: 8px;
+ left: 20px;
+ color: rgb(51, 51, 51);
+ font-size: 0.8em;
+ font-weight: 700;
+}
+
+.cardd3 div {
+ width: 100%;
+ height: 100%;
+ border-radius: 20px;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.212);
+ cursor: pointer;
+ z-index: 10;
+ transition: all .4s;
+ background-color: #fff;
+}
+
+.cardd3:hover div {
+ transform: translateY(-30px);
+}
+
+.cardd3 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.cardd4 {
+ width: 100%;
+ height: 100%;
+ box-shadow: 0 10px 10px rgba(0, 0, 0, 0.212);
+ background: #fff;
+ display: flex;
+ border-radius: 20px;
+ justify-content: center;
+ position: relative;
+ transition: all .4s;
+}
+
+.cardd4::before {
+ content: 'GYM';
+ letter-spacing: 0.2em;
+ position: absolute;
+ bottom: 8px;
+ left: 20px;
+ color: rgb(51, 51, 51);
+ font-size: 0.8em;
+ font-weight: 700;
+}
+
+.cardd4 div {
+ width: 100%;
+ height: 100%;
+ border-radius: 20px;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.212);
+ cursor: pointer;
+ z-index: 10;
+ transition: all .4s;
+ background-color: #fff;
+}
+
+.cardd4:hover div {
+ transform: translateY(-30px);
+}
+
+.cardd4 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.hotelleft{
+  float: right;
+  width: 50%;
+  height: 720px;
+}
+.hotelleft p{
+  text-align: left;
+  font-size: 30px;
+  font-style: oblique;
+}
+.contact{
+  width: 100%;
+  height: 900px;
+  padding: 10px;
+  margin-top: 100px;
+}
+.bgimg{
+  margin-left: 74px;
+  margin-top: 140px;
+  z-index: -1;
+  width: 1000px;
+  height: 700px;
+  background-color: darksalmon;
+  border-radius: 20px;
+}
+.bgimg img{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.212);
+}
+.contactbox{
+  margin-top: -740px;
+  margin-right: 10%;
+  height: 100%;
+  width: 350px;
+  float: right;
+}
+.infobox{
+  margin-top: -740px;
+  margin-right: 5%;
+  height: 100%;
+  width: 350px;
+  float: right;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 350px;
+  height: 500px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+  margin-top: 150px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.212);
+}
+
+.title {
+  font-size: 28px;
+  color: royalblue;
+  font-weight: 600;
+  letter-spacing: -1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.title::before,.title::after {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: 0px;
+  background-color: royalblue;
+}
+
+.title::before {
+  width: 18px;
+  height: 18px;
+  background-color: royalblue;
+}
+
+.title::after {
+  width: 18px;
+  height: 18px;
+  animation: pulse 1s linear infinite;
+}
+
+.message, .signin {
+  color: rgba(88, 87, 87, 0.822);
+  font-size: 14px;
+}
+
+.signin {
+  text-align: center;
+}
+
+.signin a {
+  color: royalblue;
+}
+
+.signin a:hover {
+  text-decoration: underline royalblue;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+}
+
+.form label {
+  position: relative;
+}
+
+.form label .input {
+  width: 100%;
+  padding: 10px 10px 20px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+}
+
+.form label .input + span {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  color: grey;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown + span {
+  top: 15px;
+  font-size: 0.9em;
+}
+
+.form label .input:focus + span,.form label .input:valid + span {
+  top: 30px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.form label .input:valid + span {
+  color: green;
+}
+
+.submit {
+  border: none;
+  outline: none;
+  background-color: royalblue;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  transform: .3s ease;
+}
+
+.submit:hover {
+  background-color: rgb(56, 90, 194);
+}
+
+.footer{
+   bottom: 0px;
+   width: 100%;
+   background-color: ghostwhite;
+   color: black;
+   text-align: center;
+   display: inline-block;
+}
